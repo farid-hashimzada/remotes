@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 
     <style>
         /* .dropdown {
@@ -29,20 +31,22 @@
         } */
 
 
-
-        .pub img {
-            width: 200px;
-            height: 200px;
-            background: black;
+        .active {
+            border: 2px solid #f76a3f;
+            background: #f76a3f;
+            color: #ffffff;
+            border-radius: 5px;
+            
         }
 
-        .dark,
+        .dark {
+            background: black;
+            color: #ffffff;
+        }
         .dark * {
             background: black;
-            color: white;
+            color: #ffffff;
         }
-
-
     </style>
 </head>
 
@@ -56,15 +60,25 @@
         </div>
     </div>  -->
 
-    <div id='darkMode' class="dark">
-        <button>click me</button>
-        <img src="../Sat-getsin/all img/a person.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam laboriosam iste, placeat recusandae,
-            possimus fugiat quasi error laborum doloremque facere laudantium veniam autem aut amet nobis at magni
-            praesentium necessitatibus.</p>
+
+
+
+    <!-- <div id="root">
+        
     </div>
+    
+    <h1>facebook</h1>
+    <p>Ay🌑🌙</p>
+    <button>click to me</button>
+    <style>
+    </style>
+    
+    <div class="card">
+        
+    </div> -->
 
-
+    <h1 id="hed">hello</h1>
+    <div id="root"></div>
     <script src="./script.js"></script>
 </body>
 

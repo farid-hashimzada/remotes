@@ -3,7 +3,7 @@
 //     age: 22
 // }
 
-// const HBD  = (obj) => {
+// const HBD = (obj) => {
 //     obj.age +=  1
 // }
 
@@ -13,13 +13,9 @@
 // let obj = {ad: 'farid'}     //aa
 // let obj2 = obj            //aa
 
-
 // obj.ad = 'hashimzada'
-// console.log(obj.ad) 
+// console.log(obj.ad)
 // console.log(obj2.ad)
-
-
-
 
 // function Animal (name_, nick, age, voice) {
 //     this.name = name_
@@ -46,8 +42,6 @@
 // console.log(bmw.model)
 // console.log(bmw.brand)
 // console.log(bmw.year)
-
-
 
 // function Farid (name, surname, age, car) {
 //     this.name = name
@@ -103,32 +97,22 @@
 // let ay1 = ay.replaceAll('a', 'A')
 // console.log(ay1)
 
-
-
-
-
 // replace() ile mentiqli mesele helli
-// const ad = ' asdddadqdaaaaq addf asfe  fd a defefdsqqaa def a'
-// let count = ad.length - ad.replaceAll('a' , '').length
+// const ad = 'farid ay '
+// let count = ad.length - ad.replaceAll('a', '').length
 // console.log(count)
-
-
-
 
 // slice dilimleyir
 // const ad = 'farid hashimzada'
 // let ay = ad.slice(0, 5)
 // console.log(ay)
 
-
 // sozleri ekrana cixartmaq ucun istifade olunur
 // const ad = 'farid, hasimzada, ay)'
 // let ay = ad.split(', ')
 // console.log(ay)
 
-
-
-// toUpperCase ucun 
+// toUpperCase ucun
 // function toCapitalCase(ad) {
 //     console.log(ad.replace(ad[0] , ad[0].toUpperCase()))
 // }
@@ -137,18 +121,11 @@
 // toCapitalCase('ay')
 // toCapitalCase('together')
 
-
-
-
-
 // nece gun yasadigimi hesablayacam
 // const birthday = new Date(2000, 2, 4)
 // let indi = Date.now()
 // const dayCount = (indi - birthday) /1000 /60 /60 /24
 // console.log(dayCount)
-
-
-
 
 // const massiv = ['farid', 'ali', 'intiqam', 'nazim']
 
@@ -159,16 +136,13 @@
 //     }
 // }
 
-
-// const obj = [24,55,66,77,33,24,56]
+// const arr = [24,55,66,77,33,24,56]
 // let sum = 0
-// for(let num of obj) {
-//     sum += num
+// for(let num of arr) {
+//   sum += num
 // }
 // console.log(sum)
-
-
-
+// console.log(arr)
 
 // let human = {
 //     ad:'ferid',
@@ -178,79 +152,67 @@
 
 // for(let key in human) {
 //     console.log(`${key} - ${human[key]}`)
-// }
+//   }
+//   console.log(human)
 
-
-// let arr = ['farid', 'ay)', 'together', 6, 
+// let arr = ['farid', 'ay)', 'together', 6,
 // function (name) {
 //     console.log(name)
 // }]
 
 // arr [arr.length - 1]('farid')
 
-
 // const date = new Date()
 // document.write(date)
 
-
 // let sairler = [
-//     {name: 'Ali', year: 1990},
-//     {name: 'Farid', year: 2010},
-//     {name: 'Sada', year: 1890},
-// ]
+//   { name: "Ali", year: 1990 },
+//   { name: "Farid", year: 2010 },
+//   { name: "Sada", year: 1890 },
+// ];
 
-// sairler.sort((a, b) => a.year - b.year)
-
-// console.log(sairler)
-
-
-
-
-
-
-
+// sairler.sort((a, b) => a.year - b.year);
+// console.log(sairler);
 
 // const brovaMeyveleri = [
-//     {
-//         name:'alma',
-//         type: 'fruit'
-//     },
+//   {
+//     name: "alma",
+//     type: "fruit",
+//   },
 
-//     {
-//         name: 'armud',
-//         type:'fruit'
-//     },
+//   {
+//     name: "armud",
+//     type: "fruit",
+//   },
 
-//     {
-//         name: 'tomato',
-//         type: 'vegetable'
-//     },
+//   {
+//     name: "tomato",
+//     type: "vegetable",
+//   },
 
-//     {
-//         name: 'brocoli',
-//         type: 'vegetable'
-//     },
+//   {
+//     name: "brocoli",
+//     type: "vegetable",
+//   },
 
-//     {
-//         name: 'nar',
-//         type:'fruit'
-//     }
-// ]
+//   {
+//     name: "nar",
+//     type: "fruit",
+//   },
+// ];
 
 // function selectFruits(arr) {
-//     return arr.filter((obj)) => obj.type === 'fruit')
+//   return arr.filter((obj) => obj.type === "fruit");
 // }
 
-// let sum = 0
+// let sum = 0;
 
 // for (let i = 0; i <= 100; i++) {
-//     if (i % 2 === 1) {
-//         console.log(i)
-//         sum += i
-//     }
-
+//   if(i%2===1) {
+//     console.log(i)
+//   }
+//   sum+=i
 // }
-
 
 // console.log(sum);
 
@@ -259,12 +221,6 @@
 //     nam.length <=23 ? console.log('bu sert duzdur') : console.log('bu sert sehvdir')
 //     console.log(nam)
 // }
-
-
-
-
-
-
 
 //switcle calculator
 
@@ -294,9 +250,6 @@
 //         default:'xais edirik eded daxil edin'
 // }
 
-
-
-
 // function ay(x, y) {
 //     let net = x + y
 //     return net
@@ -308,9 +261,6 @@
 // let ay = (x, y) => x +y;
 
 // console.log(ay(5,6))
-
-
-
 
 // function pakize(ed1, ed2) {
 //     return function (ad) {
@@ -330,7 +280,6 @@
 // let test1 = pakize(20, 20)
 // test1('master')
 
-
 // function cem(ed1, ed2, callback) {
 //     let netice = ed1 + ed2
 //     callback(netice)
@@ -349,12 +298,9 @@
 //     console.log(ay1)
 // })
 
-
-
 // const cemm = (a, b) => a + b
 
 // console.log(cemm(5, 9))
-
 
 // arrow function
 // const kmToMl = (km) => {
@@ -366,7 +312,6 @@
 // const formalMan = (ad) => `Mr. ${ad}`
 
 // console.log(formalMan('farid'))
-
 
 // const makeFormal = (cins) => {
 //     if (cins === 'k') {
@@ -383,8 +328,6 @@
 
 // console.log(kisiUcun('farid'))
 // console.log(qadinUcun('Ay'))
-
-
 
 //for in
 // const a = {
@@ -410,17 +353,12 @@
 //     console.log(key)
 // }
 
-
-
 // const number = +prompt('eded daxil edin')
 
 // for(let count = 1; count <= 10; count++) {
 //     const operate = number * count
 //     console.log(`${number} x ${count} = ${operate}`)
 // }
-
-
-
 
 //vurma cedveli
 // const number = +prompt('eded daxil edin')
@@ -429,7 +367,6 @@
 //     const operate = number * i
 //     console.log(`${number} x  ${i} = ${operate}`)
 // }
-
 
 //referance type
 // const obj = {
@@ -443,16 +380,13 @@
 // console.log(obj)
 // console.log(obj2)
 
-
-
-
 //burda 2 ni nece cxaedim prop2Takeri da prop2 ni?
 // function prop2Taker(obj) {
 //     console.log(obj.i)
 // }
 
 // prop2Taker({
-//     'one': 1, 
+//     'one': 1,
 //     'prop2': 'two',
 //     'i': 6
 // })
@@ -471,7 +405,6 @@
 // const poni = new Animal('pop', 2, 'white', 'popa')
 // console.log(poni.age)
 
-
 // class Girl {
 //     constructor(name, age, color, nick) {
 //         this.name = name
@@ -487,7 +420,6 @@
 // console.log(ayTwo)
 // console.log(ay)
 
-
 //callack function's example
 // function fetchData(callback) {
 //     setTimeout(() => {
@@ -501,14 +433,10 @@
 
 //   fetchData(handleData)
 
-
-
-
 // const arr = ['ferid', 'ay']
 
 // let netice = arr.map((ad) => ad[0].toUpperCase())
 // console.log(netice)
-
 
 // const images = ['a', 'b', 'c', 'd', 'f', 'g']
 // const randomIndex = Math.floor(Math.random() * images.length )
@@ -518,12 +446,297 @@
 
 // }
 
-const darkMode = document.getElementById('darkMOde')
-const btn = document.querySelector('button')
+// btn.onclick = () => {
+//     if(btn.className.includes('active')) {
+//         btn.className = btn.className.replace('active', '')
+//     } else {
+//         btn.className = 'active'
+//     }
+// }
 
-btn.onclick = () => {
-    darkMode.classList.toggle('dark')
+// const btn = document.querySelector('button')
+// const medeContainer = document.getElementById('medeContainer')
+
+// btn.onclick = () => {
+//     medeContainer.classList.toggle('dark')
+// }
+
+// const btn = document.querySelector('button')
+// const body=  document.querySelector('body')
+// const dark= document.getElementById('modeDark')
+// btn.onclick = () => {
+//     btn.classList.toggle('active')
+// }
+
+// btn.onclick = () => {
+//     dark.classList.toggle('dark')
+// }
+
+// const ay = document.querySelector("p");
+// const button = document.querySelector("button");
+// const rootElem = document.querySelector("#root");
+
+// const timeOut = setTimeout(() => {
+//   ay.textContent = "sen meni xilas ede bilmedin ferid😢";
+// }, 3000);
+
+// button.onclick = () => {
+//   clearTimeout(timeOut);
+//   ay.textContent = "ay";
+// };
+// setTimeout(() => {
+//   ay.textContent = "bilirdim";
+// }, 5000);
+
+// setTimeout(() => {
+//   ay.textContent = "sen🦸‍♀️";
+// }, 8000);
+// setTimeout(() => {
+//   ay.textContent = "mende";
+// }, 9000);
+// setTimeout(() => {
+//   ay.textContent = "mutlu";
+// }, 10000);
+
+// let names = [
+//   {
+//     ad: "farid",
+//     img: "Rectangle.png",
+//   },
+
+//   {
+//     ad: "ay",
+//     img: "Rectangle.png",
+//   },
+
+//   {
+//     ad: "nadir",
+//     img: "Rectangle.png",
+//   },
+
+//   {
+//     ad: "sahlar",
+//     img: "Rectangle.png",
+//   },
+
+//   {
+//     ad: "nurane",
+//     img: "Rectangle.png",
+//   },
+// ];
+// names.forEach((user) => {
+//   rootElem.innerHTML += `<p>${user.ad}</p> <img src = "../ti-amazing/all-img-Ti-academy/${user.img}" alt = "picture of${user.ad}" >`;
+// });
+
+// class User {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   tellName() {
+//     console.log(`my name is ${this.name} and  ${this.age}`);
+//   }
+// }
+
+// const farid = new User("farid", 18);
+// farid.tellName();
+
+// let farid1 = "hey do i somethink veri is bad";
+// let ay1 = farid1.split();
+// console.log(ay1);
+
+// let sum = 0;
+
+//textin uzunlugunu tapanda isitfade olunur
+// function test(a) {
+//   console.log(a.split(' ').length)
+// }
+
+// test('hello world')
+
+// let cli =''
+
+// while (cli ==='q') {
+//     cli = prompt('eded daxil edin')
+//     console.log(cli)
+// }
+
+// const anaSozu = {
+//   en: 'mother',
+//   az: 'ana',
+//   ru: 'mam',
+//   tr: 'anne'
+// }
+// console.log(anaSozu)
+
+// let chose = prompt('az, ru, en, turk')
+
+// if(chose === 'az') {
+//   console.log(anaSozu.az)
+// }
+
+// function test(callback) {
+//   callback(prompt("ededi daixl et zehet olmasa"));
+// }
+
+// test((soz) => {
+//   console.log(soz);
+// });
+
+// function cem(a, b, c) {
+//   return a + b + c;
+// }
+
+// let a = cem(4, 4, 4);
+
+// console.log(a);
+
+// function worldCount(cumle) {
+//   console.log(cumle.split(" ").length);
+// }
+
+// worldCount("salam men hey qardas");
+
+// const yekun = ["farid", "ay"];
+// let first = yekun[0];
+// let second = yekun[1];
+
+// console.log(first);
+// console.log(second);
+
+// let human = {
+//   ad: "farid",
+//   age: 18,
+// };
+
+// const tree = ({ad,age, adTwo})=> {
+// console.log(`your name is ${ad} and your age is ${age} }`)
+// }
+
+// tree(human)
+
+// axios
+//   .get("https://jsonplaceholder.typicode.com/users")
+//   .then(({ data }) => {
+//     console.log(data);
+//   });
+
+// async function show() {
+//   const { data } = await axios.get(
+//     "https://jsonplaceholder.typicode.com/users"
+//   );
+//   console.log(data);
+// }
+
+// show();
+
+
+
+
+
+// const language = {
+//     az: 'mama',
+//     tr: 'anne',
+//     en: 'mother',
+// }
+// let choose = prompt('az, en, tr')
+
+// function changeLanguage() {
+//     if (choose === 'az') {
+//         console.log(language.az)
+//     } else if (choose === 'en') {
+//         console.log(language.en)
+//     } else if (choose === 'tr') {
+//         console.log(language.tr)
+//     }else{
+//         console.log('please choose any language')
+//     }
+// }
+
+// changeLanguage()
+
+// switch (choose) {
+//     case 'az':
+//         console.log(language.az)
+//         break;
+//     case 'tr':
+//         console.log(language.tr)
+//         break;
+//     case 'en':
+//         console.log(language.en)
+//         break;
+//     default:
+//         console.log(`${language.az} please choose any laguage'`)
+// }
+
+// let hum = {
+//     ad: 'farid',
+//     age: 18
+// }
+
+// function checkSome({ad,age}) {
+//     console.log(`my name is ${ad} and my age ${age}`)
+// }
+
+// checkSome(hum)
+
+// let name = prompt('sahlar adivi daxil et')
+
+// function showName(ad) {
+//     console.log(`my name is ${ad}`)
+// }
+
+// let result = showName(name)
+// console.log(result)
+
+// function test(callback) {
+//     callback('ay) farid')
+// }
+
+// test((farid) => {
+//     document.write(farid)
+// })
+
+
+// let pro = prompt('en, tr, az, tr')
+
+// let arr = {
+//     az: 'ana',
+//     en: 'mother',
+//     tr: 'anne',
+//     ru: 'mama'
+// }
+
+//                                             // console.log(arr[pro]) bu daha suretli yolda 
+
+// switch (pro) {
+//     case 'en':
+//         console.log(arr.en)
+//         break;
+//     case 'az':
+//         console.log(arr.az)
+//         break;
+//     case 'tr':
+//         console.log(arr.tr)
+//         break;
+//     case 'ru':
+//         console.log(arr.ru)
+//         break;
+//     default:
+//         console.log('dil daxil et')
+// }
+//  
+
+const h1 = document.getElementById('hed')
+const root = document.querySelector('#root')
+
+h1.onclick = () => {
+    // h1.style.display = 'none'
+    h1.textContent = 'ay)'
+    h1.style.cursor = 'pointer'
+    h1.style.textAlign = 'center'
 }
 
+let adlar = ['farid', 'ay', 'pakize',]
 
-
+adlar.forEach(element => root.innerHTML += `<p>${element}</p>`);

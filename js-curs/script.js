@@ -136,7 +136,7 @@
 //     }
 // }
 
-// const arr = [24,55,66,77,33,24,56]
+// const arr = [24,55,66,257,33,24,56]
 // let sum = 0
 // for(let num of arr) {
 //   sum += num
@@ -707,7 +707,7 @@
 //     ru: 'mama'
 // }
 
-//                                             // console.log(arr[pro]) bu daha suretli yolda 
+//                                             // console.log(arr[pro]) bu daha suretli yolda
 
 // switch (pro) {
 //     case 'en':
@@ -725,18 +725,140 @@
 //     default:
 //         console.log('dil daxil et')
 // }
-//  
+//
 
-const h1 = document.getElementById('hed')
-const root = document.querySelector('#root')
 
-h1.onclick = () => {
-    // h1.style.display = 'none'
-    h1.textContent = 'ay)'
-    h1.style.cursor = 'pointer'
-    h1.style.textAlign = 'center'
-}
 
-let adlar = ['farid', 'ay', 'pakize',]
+// in dom some example
 
-adlar.forEach(element => root.innerHTML += `<p>${element}</p>`);
+// const h1 = document.getElementById('hed')
+// const root = document.querySelector('#root')
+
+// h1.onclick = () => {
+//     // h1.style.display = 'none'
+//     h1.textContent = 'ay)'
+//     h1.style.cursor = 'pointer'
+//     h1.style.textAlign = 'center'
+// }
+
+// let adlar = ['farid', 'ay', 'pakize',]
+
+// adlar.forEach(element => root.innerHTML += `<p>${element}</p>`);
+
+
+
+
+
+
+//javaScript task than codeBubb
+//locigal operator
+//one
+// const isEqualTo100 = (a, b) => a === 100 || b === 100 || (a + b) === 100
+
+// console.log(isEqualTo100(100, 0))
+// console.log(isEqualTo100(0, 100))
+
+// console.log(isEqualTo100(10, 90))
+// console.log(isEqualTo100(50, 50))
+
+
+
+//two
+//burda elementin extension -ni gotururuk
+
+// const getFileExtension = (str) => { return str.slice(str.lastIndexOf("."))}
+// console.log(getFileExtension('index.html'))
+
+
+//three
+//burda elifba sirasindaki novbeti herfi gotururuk
+// const moveCharsForward = (str) =>
+//     str
+//         .split('')
+//         .map(char => String.fromCharCode(char.charCodeAt
+//             (0) + 2))
+//         .join('');
+
+// console.log(moveCharsForward('ay)'))
+
+
+//fourth
+//js date den istifade
+// const formatDate = (date = new Date()) => {
+//     const days = date.getDate()
+//     const month = date.getMonth()
+//     const year = date.getFullYear()
+//     return `${days}/${month}/${year}`
+// }
+// console.log(formatDate())
+
+
+//fiveth
+//bu taskda turnery operator ile sert veririk
+// const addNew = (str) =>
+//     str.indexOf('New!') === 0 ? str : `New! ${str}`;
+
+//     console.log(addNew('New! Offers'))
+
+
+// const obj = {
+//     name: 'farid',
+//     age: 18,
+//     fovorite: 'fanarbahce'
+// }
+
+// const arr = ['farid', 'ay', 'fanarbahce']
+
+// const myArray = arr.map((item) => {
+//     return item.toUpperCase()              
+// })
+
+// console.log(myArray)
+
+// const concat = arr.concat('ay')
+// console.log(concat)
+
+// const arr = ["apple", "banana", "orange"];
+
+// const myArray = arr.map((item) => {
+//   return item.toUpperCase();
+// });
+
+// console.log(myArray); // Output: ["APPLE", "BANANA", "ORANGE"]
+
+
+
+// bu code senin nece gun yasadigivi hesablayir Fidan
+
+// const birthday = new Date(1998, 10, 7)
+// let indi = Date.now()
+// const dayCount = (indi - birthday) / 1000 / 60 / 60 / 24
+
+// console.log(dayCount)
+
+let arr = ['Nadir', 'Shalar', 'Farid', 'Nurane']
+
+let changeArr = arr.push('Aysel')
+console.log(changeArr)
+
+console.log(arr)
+
+let forEach = arr.forEach((item) => {
+    console.log(item.toUpperCase().slice(1, 3).concat('faird'))
+})
+
+let humans = [
+    { name: 'farid', age: 18 },
+    { name: 'Arda', age: 25 },
+    { name: 'Fidan', age: 24 },
+    { name: 'Aysel', age: 24 }
+]
+
+let SortForName = humans.sort((a, b) => a.age - b.age)
+console.log(SortForName)
+
+let ForSortName = humans.sort((a, b) => a.name > b.name ? 1 : -1)
+console.log(ForSortName)
+
+let ForFindName = humans.find(({name}) => name[0]==='A')
+console.log(ForFindName)

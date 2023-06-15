@@ -854,11 +854,65 @@ let humans = [
     { name: 'Aysel', age: 24 }
 ]
 
-let SortForName = humans.sort((a, b) => a.age - b.age)
-console.log(SortForName)
+let SortForYear = humans.sort((a, b) => a.age - b.age)
+console.log(SortForYear)
 
 let ForSortName = humans.sort((a, b) => a.name > b.name ? 1 : -1)
 console.log(ForSortName)
 
 let ForFindName = humans.find(({name}) => name[0]==='A')
 console.log(ForFindName)
+
+
+// this function return data
+// function data() {
+//     const url = 'https://jsonplaceholder.typicode.com/users';
+//     fetch(url)
+//       .then(res => res.json())
+//       .then(data => {
+//         const result = document.createElement('h4');
+//         result.textContent = JSON.stringify(data);
+//         document.body.appendChild(result);
+//         return data; // Return the data for further chaining
+//       })
+//       .then(data => {
+//         const filteredData = data.filter(item => item.name.startsWith('C'));
+//         console.log(filteredData); // Log the filtered data
+//       })
+//       .catch(error => {
+//         console.error(error); // Handle any errors that occur during the fetch request
+//       });
+//   }
+  
+//   data();
+  
+
+
+// function data() {
+//     const url = 'https://jsonplaceholder.typicode.com/users';
+//     return fetch(url)
+//       .then(res => res.json())
+//       .then(data => data.filter(item => item.name.startsWith('C')));
+
+//   }
+  
+//   data()
+//     .then(filteredData => console.log(filteredData))
+//     .catch(error => console.error(error));
+  
+
+
+//prop2Taker functions
+// function prop2Taker(obj) {
+//     return obj['one']
+// }
+
+// let taker=prop2Taker({'one': 1, 'prop-2':2})
+// console.log(taker)
+
+const coders = [101,102,103,104,105,106]
+let mathCoders = coders.map(function(code) {
+    return `mth${code}`
+})
+
+console.log(mathCoders)

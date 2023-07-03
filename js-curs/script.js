@@ -836,32 +836,39 @@
 
 // console.log(dayCount)
 
-let arr = ['Nadir', 'Shalar', 'Farid', 'Nurane']
 
-let changeArr = arr.push('Aysel')
-console.log(changeArr)
 
-console.log(arr)
 
-let forEach = arr.forEach((item) => {
-    console.log(item.toUpperCase().slice(1, 3).concat('faird'))
-})
 
-let humans = [
-    { name: 'farid', age: 18 },
-    { name: 'Arda', age: 25 },
-    { name: 'Fidan', age: 24 },
-    { name: 'Aysel', age: 24 }
-]
 
-let SortForYear = humans.sort((a, b) => a.age - b.age)
-console.log(SortForYear)
 
-let ForSortName = humans.sort((a, b) => a.name > b.name ? 1 : -1)
-console.log(ForSortName)
+            // best praktik
+// let arr = ['Nadir', 'Shalar', 'Farid', 'Nurane']
 
-let ForFindName = humans.find(({name}) => name[0]==='A')
-console.log(ForFindName)
+// let changeArr = arr.push('Aysel')
+// console.log(changeArr)
+
+// console.log(arr)
+
+// let forEach = arr.forEach((item) => {
+//     console.log(item.toUpperCase().slice(1, 3).concat('faird'))
+// })
+
+// let humans = [
+//     { name: 'farid', age: 18 },
+//     { name: 'Arda', age: 25 },
+//     { name: 'Fidan', age: 24 },
+//     { name: 'Aysel', age: 24 }
+// ]
+
+// let SortForYear = humans.sort((a, b) => a.age - b.age)
+// console.log(SortForYear)
+
+// let ForSortName = humans.sort((a, b) => a.name > b.name ? 1 : -1)
+// console.log(ForSortName)
+
+// let ForFindName = humans.find(({name}) => name[0]==='A')
+// console.log(ForFindName)
 
 
 // this function return data
@@ -910,9 +917,54 @@ console.log(ForFindName)
 // let taker=prop2Taker({'one': 1, 'prop-2':2})
 // console.log(taker)
 
-const coders = [101,102,103,104,105,106]
-let mathCoders = coders.map(function(code) {
-    return `mth${code}`
-})
+// const coders = [101,102,103,104,105,106]
+// let mathCoders = coders.map(function(code) {
+//     return `mth${code}`
+// })
 
-console.log(mathCoders)
+// console.log(mathCoders)
+
+
+function cube(callback, n){
+    return callback(n) * n
+}
+
+function callback(num) {
+    return num*num
+}
+
+console.log(cube(callback, 4))
+
+
+
+  // function square(num) {
+  //     return num * num;
+  //   }
+    
+  //   function calculateSquare(callback) {
+  //     return callback(4); // 4-nün kvadratını hesablayan callback funksiyasını çağırırıq
+  //   }
+    
+  //   console.log(calculateSquare(square));
+  
+
+// function cube(callback, n) {
+//     return callback(n) * n;
+//   }
+  
+//   function callback(num) {
+//     return num * num;
+//   }
+  
+//   console.log(cube(callback, 4));
+      
+
+//   function cub(callback, x) {
+//     return callback(x + x)
+//   }
+
+//   console.log(cub(callback,5))
+
+
+
+  

@@ -842,7 +842,7 @@
 
 
 
-            // best praktik
+// best praktik
 // let arr = ['Nadir', 'Shalar', 'Farid', 'Nurane']
 
 // let changeArr = arr.push('Aysel')
@@ -873,26 +873,51 @@
 
 // this function return data
 // function data() {
-//     const url = 'https://jsonplaceholder.typicode.com/users';
-//     fetch(url)
-//       .then(res => res.json())
-//       .then(data => {
-//         const result = document.createElement('h4');
-//         result.textContent = JSON.stringify(data);
-//         document.body.appendChild(result);
-//         return data; // Return the data for further chaining
-//       })
-//       .then(data => {
-//         const filteredData = data.filter(item => item.name.startsWith('C'));
-//         console.log(filteredData); // Log the filtered data
-//       })
-//       .catch(error => {
-//         console.error(error); // Handle any errors that occur during the fetch request
-//       });
-//   }
-  
-//   data();
-  
+//   const url = 'https://jsonplaceholder.typicode.com/users';
+//   fetch(url)
+//     .then(res => res.json())
+//     .then(data => {
+//       const result = document.createElement('h4');
+//       result.textContent = JSON.stringify(data);
+//       document.body.appendChild(result);
+//       return data; // Return the data for further chaining
+//     })
+//     .then(data => {
+//       const filteredData = data.filter(item => item.name.startsWith('C'));
+//       console.log(filteredData); // Log the filtered data
+//     })
+//     .catch(error => {
+//       console.error(error); // Handle any errors that occur during the fetch request
+//     });
+// }
+
+// data();
+
+// function Data() {
+//   const url = 'https://jsonplaceholder.typicode.com/users'
+//   fetch(url)
+//     .then(Response => Response.json())
+//     .then(data => {
+//       const filteredData = data.filter(item => item.name.startsWith('C'));// i have listed the ones that start with "C" here
+//       console.log(filteredData)
+//       const result = document.createElement('p')
+//       result.textContent = JSON.stringify((filteredData))
+//       document.body.appendChild(result);
+//       return data;
+//     })
+
+//     .then(data=> {
+//       const filteredData = data.filter(item => item.name.startsWith('L'));  // i have listed the ones that start with "L" here
+//       return console.log(filteredData);
+//     })
+
+//     .catch(error=> {
+//       console.log(error)
+//     })
+// }
+
+// Data()
+
 
 
 // function data() {
@@ -902,11 +927,11 @@
 //       .then(data => data.filter(item => item.name.startsWith('C')));
 
 //   }
-  
+
 //   data()
 //     .then(filteredData => console.log(filteredData))
 //     .catch(error => console.error(error));
-  
+
 
 
 //prop2Taker functions
@@ -925,46 +950,132 @@
 // console.log(mathCoders)
 
 
-function cube(callback, n){
-    return callback(n) * n
-}
 
-function callback(num) {
-    return num*num
-}
+//        ededden kok alma
 
-console.log(cube(callback, 4))
+// function cube(callback, n) {
+//   return callback(n) * n
+// }
+
+// function callback(num) {
+//   return num * num
+// }
+
+// console.log(cube(callback, 4))
 
 
 
-  // function square(num) {
-  //     return num * num;
-  //   }
-    
-  //   function calculateSquare(callback) {
-  //     return callback(4); // 4-nün kvadratını hesablayan callback funksiyasını çağırırıq
-  //   }
-    
-  //   console.log(calculateSquare(square));
-  
+// function square(num) {
+//     return num * num;
+//   }
+
+//   function calculateSquare(callback) {
+//     return callback(4); // 4-nün kvadratını hesablayan callback funksiyasını çağırırıq
+//   }
+
+//   console.log(calculateSquare(square));
+
 
 // function cube(callback, n) {
 //     return callback(n) * n;
 //   }
-  
+
 //   function callback(num) {
 //     return num * num;
 //   }
-  
+
 //   console.log(cube(callback, 4));
-      
 
-//   function cub(callback, x) {
-//     return callback(x + x)
+
+// function cub(callback, x) {
+//   return callback(x + x)
+// }
+
+// console.log(cub(callback,5))
+
+// function calculator() {
+//   let num1 = +prompt('add a number')
+//   let operator = prompt('add any operator')
+//   let num2 = +prompt('add a number')
+
+//   switch (operator) {
+//     case '+':
+//       console.log(num1 + num2)
+//       break;
+//     case "-":
+//       console.log(num1 - num2);
+//       break;
+//     case "*":
+//       console.log(num1 * num2)
+//       break;
+//       case "/":
+//       console.log(num1 / num2)
+//     default:
+//       console.log('the add true value')
+//     }
 //   }
-
-//   console.log(cub(callback,5))
-
+//   calculator()
 
 
-  
+
+
+// function exapmle(a, b, c = 4) {
+//   let result = a + b + c
+//   console.log(result)
+// }
+
+// exapmle(5, 4, 1)
+
+// function cem(a, b) {
+//   let result = a + b
+//   return result
+// }
+
+// let net = cem(1,1)
+// console.log(net)
+
+
+
+
+// burda ise ilin 365 yoxsa 365 gun olmasini yoxlayiriq
+// function daysInYear() {
+//   var year = prompt("il girin:");
+
+// Yılın 4'e tam bölünebilmesi durumunda artık yıldır
+//il 4 de bolunerse, tam ildir
+//   if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+//     return 366; // Artık il: 366 gün
+//   } else {
+//     return 365; // Normal il: 365 gün
+//   }
+// }
+
+// var year = daysInYear();
+// console.log("il " + year + " gün vardır.");
+
+
+// const date = new Date()
+// console.log(date.getHours())
+
+// const birthday = new Date(2004, 6, 25)
+// let now = Date.now()
+// let dayCount = (now - birthday) / 1000 / 60 / 60 / 24
+// console.log(dayCount)
+
+//mutable, immutable
+var word = 'farid'
+word[0] = 'a'
+console.log(word)
+
+var word = ['farid']
+word[0] = 'a'
+console.log(word)
+
+const hed = document.querySelector('#hed');
+hed.addEventListener('click', () => {
+  hed.style.color = "red"
+  hed.style.cursor = "pointer"
+})
+
+
+

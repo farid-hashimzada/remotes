@@ -30,55 +30,82 @@
             transition: 2s;
         } */
 
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
         .active {
             border: 2px solid #f76a3f;
             background: #f76a3f;
             color: #ffffff;
             border-radius: 5px;
-            
+        }
+
+        .active-btn {
+            border: 2px solid #f76a3f;
+            background: #f76a3f;
+            color: orange;
+            border-radius: 5px;
         }
 
         .dark {
             background: black;
             color: #ffffff;
         }
+
         .dark * {
             background: black;
             color: #ffffff;
+        }
+
+        .btn {
+            padding: 10px !important;
+            border-radius: 5px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        #root {
+            border: 3px solid black;
+            width: 15%;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #root li {
+            border: 2px solid black;
+            list-style: none;
+            width: fit-content;
+            margin: 5px;
+            width: 100px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        button {
+            margin-top: 15px;
         }
     </style>
 </head>
 
 <body>
-    <!-- <div class="dropdown">
-        <span>Home</span>
-        <div class="dropdown-content">
-            <p>Maldiv</p>
-            <p>Maldiv</p>
-            <p>Maldiv</p>
-        </div>
-    </div>  -->
-
-
-
-
-    <!-- <div id="root">
-        
-    </div>
-    
-    <h1>facebook</h1>
-    <p>Ay🌑🌙</p>
-    <button>click to me</button>
-    <style>
-    </style>
-    
-    <div class="card">
-        
-    </div> -->
-
     <h1 id="hed">hello</h1>
-    <div id="root"></div>
+    <div id="root">
+        <ul id="favorit">
+            <li id="Matrix">Matrix</li>
+            <li id="harry">harry potter</li>
+            <li id="rings">rings of the king</li>
+            <li id="marvel">marvel</li>
+        </ul>
+        <button class="btn">Enter</button>
+    </div>
     <script src="./script.js"></script>
 </body>
 

@@ -1077,5 +1077,136 @@ hed.addEventListener('click', () => {
   hed.style.cursor = "pointer"
 })
 
+const root = document.getElementById('root')
+const ul = document.createElement('ul')
+const li = document.createElement('li')
+
+// root.append(ul)
+// ul.textContent = 'farid'
+// ul.remove()  this methid removed selected element  
+// ul.append(li)
+// li.textContent = 'ay'
+// console.log(li.parentNode.parentNode)
+// console.log(li.parentElement.parentElement)
+
+// const html = document.documentElement
+// console.log(html.parentNode)
+
+// const ull = document.querySelector('ul')
+// console.log(ull.childNodes)
+// console.log(ull.firstElementChild)  
+// console.log(ull.nextSibling)
+// console.log(ull.previousSibling)
+
+const btn = document.querySelector('button')
+const body = document.querySelector('body')
+
+// btn.addEventListener('click',() => {
+//   alert('this btn color well be lightblue')
+//   btn.style.background = 'orange'
+//   btn.style.color = 'white'
+// })
+
+function changeColor() {
+  body.style.background = 'green'
+  btn.style.background = 'orange'
+  btn.style.color = 'white'
+}
+
+btn.addEventListener('click', changeColor)
+
+// window.addEventListener('click', () => {
+//   console.log(window);
+// }, true)
+
+// window.addEventListener('click', (e) => {
+//   e.preventDefault
+//   console.log(e.target.innerText = 'clicked')
+// }, true)
+
+// document.querySelector('#Matrix').addEventListener
+//   ('click', (e) => {
+//     console.log('matrix is clicked')
+//     const target = e.target
+//   })
+
+const matrix = document.querySelector('#Matrix')
+const harry = document.querySelector('#harry')
+const rings = document.querySelector('#rings')
+const marvel = document.querySelector('#marvel')
+const fovorit = document.querySelector('#favorit')
+const newLi = document.createElement('li')
+
+// matrix.addEventListener('click', function (e) {
+//   console.log('matrix is clicked')
+//   matrix.style.cursor = 'pointer'
+
+//   const target = e.target
+
+//   if (target.matches('li')) {
+//     target.style.background = 'lightgray'
+//   }
+// })
+
+// /////////////////////////////////////////////////////////
+
+// harry.addEventListener('click', (e) => {
+//   console.log('harry potter')
+//   harry.style.cursor = 'pointer'
+//   const target = e.target
+
+//   if (target.matches('li')) {
+//     target.style.background = 'lightgray'
+//   }
+// })
+
+// ///////////////////////////////////////////////////////////
+
+rings.addEventListener('click', (e) => {
+  console.log('Ring of the lord')
+  harry.style.cursor = 'pointer'
+  body.classList.toggle('dark')
+
+  const target = e.target
+  if (target.matches('li')) {
+    rings.classList.toggle('dark')
+  }
+})
+
+// marvel.addEventListener('click', (e) => {
+//   console.log('Marvel')
+
+//   const target = e.target
+
+//   if (target.matches('li')) {
+//     e.target.style.background = 'lightgrey'
+//   }
+// })
 
 
+
+//yuxarida yazdigim codlari evez eden code
+document.querySelector('#favorit').addEventListener
+  ('click', (e) => {
+    console.log(e.target.getAttribute('id') + ' is clicked');
+
+    if (e.target.matches('li')) {
+      e.target.style.background = 'lightgrey'
+    }
+  })
+
+newLi.innerText = 'Football';
+newLi.setAttribute('id', 'Football')
+
+fovorit.appendChild(newLi)
+
+// rings.addEventListener('click', (e) => { 
+//   console.log('clicked this topics')
+
+//   body.classList.toggle('dark')
+//   const target = e.target
+
+  // if(target.matches('li')) {
+  //   target.style.background = 'lightgrey'
+  // }
+// })
